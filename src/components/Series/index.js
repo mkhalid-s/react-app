@@ -12,7 +12,7 @@ class Series extends Component {
 
     onSeriesInputChangeHandler = (e) => {
 
-        if (this.state.seriesNameEntered != ''){
+        if (this.state.seriesNameEntered !== ''){
             this.setState( {isFetching: true});
             fetch('http://api.tvmaze.com/search/shows?q='+this.state.seriesNameEntered)
                 .then(response => response.json())
@@ -42,7 +42,7 @@ class Series extends Component {
                         </div>
                 </div>
                 {
-                    !this.state.isFetching && this.state.series.length == 0 && this.state.seriesNameEntered.trim() != ''
+                    !this.state.isFetching && this.state.series.length === 0 && this.state.seriesNameEntered.trim() !== ''
                     &&
                         <p> No Series found with this name </p>
                 }
