@@ -14,7 +14,7 @@ class Series extends Component {
 
         if (this.state.seriesNameEntered !== ''){
             this.setState( {isFetching: true});
-            fetch('http://api.tvmaze.com/search/shows?q='+this.state.seriesNameEntered)
+            fetch('https://api.tvmaze.com/search/shows?q='+this.state.seriesNameEntered)
                 .then(response => response.json())
                 .then(jsonres => {
                     this.setState( { series : jsonres, isFetching : false})
