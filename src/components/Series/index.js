@@ -10,6 +10,10 @@ class Series extends Component {
         isFetching : false
     }
 
+    /**
+     *
+     * @param e
+     */
     onSeriesInputChangeHandler = (e) => {
 
         if (this.state.seriesNameEntered !== ''){
@@ -23,6 +27,16 @@ class Series extends Component {
 
     }
 
+    /**
+     *
+     * @param e
+     */
+    onKeyUpPressed = (e) => {
+        if (e.charCode === 13){
+            this.onSeriesInputChangeHandler(e);
+        }
+    }
+
     render() {
         return (
             <div className="container-sm">
@@ -31,6 +45,7 @@ class Series extends Component {
                            aria-label="Enter the series name here" aria-describedby="button-addon2"
                            value={this.state.seriesNameEntered}
                            onChange={ event => this.setState( {seriesNameEntered: event.target.value})}
+                           onKeyPress={ event => this.onKeyUpPressed(event)}
                     />
                         <div className="input-group-append">
                             <button
