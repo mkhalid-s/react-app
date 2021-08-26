@@ -2,6 +2,16 @@
 
 Branch - DEV-TVSERIES
 
+Before Searching 
+
+![image](https://user-images.githubusercontent.com/43288811/130991327-19963986-debb-4095-b0b9-cbfea11431ab.png)
+
+
+After Searching
+
+![image](https://user-images.githubusercontent.com/43288811/130991393-75e2991e-b38a-49a7-a4c4-f5b8a1097824.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
