@@ -1,3 +1,7 @@
+![Node.js CI](https://github.com/mkhalid-s/react-app/workflows/Node.js%20CI/badge.svg?branch=dev-tvseries)
+
+Branch - DEV-TVSERIES
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
