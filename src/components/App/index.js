@@ -10,7 +10,7 @@ function App() {
     return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">TV Series List</h1>
+        <h1 className="App-title">TV Series List - ReactJS </h1>
       </header>
         <br/>
       <Intro message="Here you can find your favorite series"/>
